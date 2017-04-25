@@ -141,8 +141,6 @@ public class MainActivity extends AppCompatActivity {
             }else{
                 set.clear();
             }
-
-
             set.addAll(note);
             sharedPreferences.edit().remove("note").apply();
             sharedPreferences.edit().putStringSet("note", set).apply();
